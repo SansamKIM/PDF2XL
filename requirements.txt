@@ -1,0 +1,32 @@
+# requirements.txt - runtime dependencies
+#
+# Versions pinned from a verified Windows development environment.
+#   openai==2.14.0
+#   pdf2image==1.17.0
+#   pillow==12.0.0
+#   pdfplumber==0.11.8
+#   PyYAML==6.0.3
+#   openpyxl==3.1.5
+#   platformdirs==4.5.1
+#
+# Install:
+#   pip install -r requirements.txt
+
+# OpenAI API
+openai==2.14.0
+
+# PDF rendering (requires Poppler binaries at runtime)
+pdf2image==1.17.0
+Pillow==12.0.0
+
+# PDF table/text extraction utilities
+pdfplumber==0.11.8
+
+# Config files (YAML)
+PyYAML==6.0.3
+
+# Excel output
+openpyxl==3.1.5
+
+# Cross-platform user config directory (GUI)
+platformdirs==4.5.1

@@ -1,0 +1,74 @@
+# Local Python environments and bytecode
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Build output (keep pdf2xlAI.spec: it is the build recipe)
+/build/
+/dist/
+*.egg-info/
+.eggs/
+
+# Downloaded Poppler bundles; install separately when running/building
+/third_party/poppler/poppler-*/
+/third_party/poppler/macos/
+/third_party/poppler/*.zip
+/third_party/poppler/*.7z
+
+# Credentials and GUI API-key settings copied into the project
+.env
+.env.*
+!.env.example
+!.env.sample
+config.json
+secrets.json
+*.pem
+*.key
+
+# Input documents and generated workbooks
+# Only the reviewed application templates are included below.
+/input/
+/inputs/
+/output/
+/outputs/
+*.pdf
+*.xls
+*.xlsx
+*.xlsm
+*.xlsb
+!/templates/regular_poll/templatePSR.xlsx
+!/templates/regular_poll/templateGE.xlsx
+!/templates/regular_poll/templateISSUE.xlsx
+!/templates/local_elections/templatePSR.xlsx
+!/templates/local_elections/templateGE.xlsx
+!/templates/local_elections/templateISSUE.xlsx
+
+# Reviewed synthetic public examples (keep other input/output documents ignored)
+!/examples/sample_poll.pdf
+!/examples/expected_result.xlsx
+
+# Conversion caches, reports, and logs
+.cache/
+_cache/
+pdf_cache/
+run_report.json
+*.log
+/logs/
+
+# Development tool caches and local editor settings
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+
+# OS and Office temporary files
+.DS_Store
+Thumbs.db
+Desktop.ini
+~$*
+*.tmp
